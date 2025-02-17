@@ -3,7 +3,7 @@ import time
 import os
 import argparse
 import logging
-from ubcc import UpbitCandleCollector
+from .ubcc import UpbitCandleCollector
 
 def main():
     parser = argparse.ArgumentParser(description='Upbit Candle Collector')
