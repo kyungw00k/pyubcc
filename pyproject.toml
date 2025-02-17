@@ -1,0 +1,26 @@
+[project]
+name = "pyubcc"
+version = "0.1.0"
+authors = [
+  { name="Kyungwook Park", email="parksama@gmail.com" },
+]
+description = "Upbit Candle Collector"
+readme = { file = "README.md", content-type = "text/markdown" }
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.25.1"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Office/Business :: Financial :: Investment"
+]
+keywords = ["upbit", "업비트", "cryptocurrency", "candle", "trading"]
+urls = { "Homepage" = "https://github.com/kyungw00k/pyubcc" }
+
+[project.scripts]
+ubcc = "pyubcc.cli:main"
